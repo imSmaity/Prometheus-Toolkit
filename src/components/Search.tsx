@@ -1,10 +1,18 @@
+import { ChangeEvent } from "react";
 import searchIcon from "../assets/icons/search.svg";
 
-const Search = () => {
+interface ISearchProps {
+  text: string;
+  handleSearch: (e: ChangeEvent<HTMLInputElement>) => void;
+}
+
+const Search = ({ text, handleSearch }: ISearchProps) => {
   return (
     <div className="border border-gray p-[7px] flex gap-2 rounded-sm">
       <img src={searchIcon} alt="Search" />
       <input
+        value={text}
+        onChange={handleSearch}
         placeholder="Search for a component"
         className="outline-none w-full text-sm leading-1"
       />

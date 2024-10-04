@@ -2,7 +2,7 @@ import last9 from "../assets/images/last9.svg";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between items-center px-[200px] border-t border-gray py-[18px] mt-auto">
+    <div className="flex justify-between items-center px-[250px] border-t border-gray py-[18px] mt-auto">
       <div className="text-sm leading-1 font-medium text-secondary">
         Contribute on GitHub
       </div>
